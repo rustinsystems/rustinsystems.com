@@ -1,0 +1,12 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#0f172a"/>
+  <rect x="50" y="50" width="700" height="300" fill="none" stroke="#2a3439" stroke-width="2"/>
+  <line x1="50" y1="50" x2="750" y2="350" stroke="#36454f" stroke-width="1"/>
+  <line x1="50" y1="350" x2="750" y2="50" stroke="#36454f" stroke-width="1"/>
+  <circle cx="400" cy="200" r="50" fill="#2a3439" stroke="#c0c0c0" stroke-width="2"/>
+  <text x="400" y="205" font-family="monospace" font-size="14" fill="#e8e8e8" text-anchor="middle">NETWORK TOPOLOGY</text>
+  <rect x="100" y="100" width="60" height="40" fill="#36454f" stroke="#c0c0c0"/>
+  <rect x="640" y="100" width="60" height="40" fill="#36454f" stroke="#c0c0c0"/>
+  <rect x="100" y="260" width="60" height="40" fill="#36454f" stroke="#c0c0c0"/>
+  <rect x="640" y="260" width="60" height="40" fill="#36454f" stroke="#c0c0c0"/>
+</svg>
