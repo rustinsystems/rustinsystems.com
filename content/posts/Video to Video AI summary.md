@@ -1,6 +1,6 @@
 ---
 
-title: "Optimizing GPU Resources on Arch Linux"
+title: "Video to Video AI Summary"
 
 date: "2025-10-28"
 
