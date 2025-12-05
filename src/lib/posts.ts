@@ -67,7 +67,8 @@ export function getAllPostIds() {
 }
 
 export async function getPostData(id: string): Promise<PostData> {
-    const fullPath = path.join(postsDirectory, `${id}.md`);
+    const decodedId = decodeURIComponent(id);
+    const fullPath = path.join(postsDirectory, `${decodedId}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
 
     // Use gray-matter to parse the post metadata section
@@ -81,7 +82,7 @@ export async function getPostData(id: string): Promise<PostData> {
 
     // Combine the data with the id and contentHtml
     return {
-        id,
+        id: decodedId,
         contentHtml,
         ...(matterResult.data as { date: string; title: string }),
     };
