@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { Calendar, ArrowRight, Tag } from "lucide-react";
+import { Calendar, ArrowRight } from "lucide-react";
 import { PostData } from "@/lib/posts";
 
 interface BlogFilterProps {
@@ -36,8 +36,8 @@ export default function BlogFilter({ posts }: BlogFilterProps) {
                     <button
                         onClick={() => setSelectedTag(null)}
                         className={`px-3 py-1 rounded-full text-xs font-mono border transition-all ${selectedTag === null
-                                ? "bg-silver text-slate-900 border-silver"
-                                : "bg-gunmetal text-gray-400 border-charcoal hover:border-silver"
+                            ? "bg-silver text-slate-900 border-silver"
+                            : "bg-gunmetal text-gray-400 border-charcoal hover:border-silver"
                             }`}
                     >
                         All
@@ -47,8 +47,8 @@ export default function BlogFilter({ posts }: BlogFilterProps) {
                             key={tag}
                             onClick={() => setSelectedTag(tag)}
                             className={`px-3 py-1 rounded-full text-xs font-mono border transition-all ${selectedTag === tag
-                                    ? "bg-silver text-slate-900 border-silver"
-                                    : "bg-gunmetal text-gray-400 border-charcoal hover:border-silver"
+                                ? "bg-silver text-slate-900 border-silver"
+                                : "bg-gunmetal text-gray-400 border-charcoal hover:border-silver"
                                 }`}
                         >
                             {tag}
@@ -96,7 +96,7 @@ export default function BlogFilter({ posts }: BlogFilterProps) {
 
                 {filteredPosts.length === 0 && (
                     <div className="text-center py-20 bg-gunmetal/10 rounded-lg border border-charcoal border-dashed">
-                        <p className="text-gray-500">No posts found with tag "{selectedTag}".</p>
+                        <p className="text-gray-500">No posts found with tag &quot;{selectedTag}&quot;.</p>
                         <button
                             onClick={() => setSelectedTag(null)}
                             className="mt-4 text-silver hover:underline text-sm"

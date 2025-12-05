@@ -42,7 +42,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-white mb-6 font-mono">Engineering-Led IT Solutions</h2>
             <p className="text-lg text-gray-400 leading-relaxed">
               Rustin Systems helps small businesses modernise and optimise digital systems using an engineering lens.
-              We don't just fix problems; we architect solutions that bridge the gap between hardware constraints and software requirements.
+              We don&apos;t just fix problems; we architect solutions that bridge the gap between hardware constraints and software requirements.
             </p>
           </div>
         </div>
