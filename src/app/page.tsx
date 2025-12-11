@@ -10,13 +10,13 @@ export default async function Home() {
   const caseStudies = [
     {
       id: "Muhammadeyah Pre-Primary: Case Study in IT Modernisation",
-      icon: Building,
-      role: "IT Manager Duties",
+      icon: Users,
+      role: "Infrastructure Digital Optimisation",
     },
     {
       id: "Hadjie Abdullah Solomon Trust: Enterpise Network Infrastructure Overhaul",
-      icon: Users,
-      role: "Infrastructure Manager",
+      icon: Building,
+      role: "Infrastructure Manager, Network Architect",
     }
   ];
 
@@ -63,12 +63,36 @@ export default async function Home() {
       {/* About Section */}
       <section className="py-20 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl font-bold text-white mb-6 font-mono">Engineering-Led IT Solutions</h2>
             <p className="text-lg text-gray-400 leading-relaxed">
               Rustin Systems helps small businesses modernise and optimise digital systems using an engineering lens.
               We don&apos;t just fix problems; we architect solutions that bridge the gap between hardware constraints and software requirements.
             </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center gap-8 bg-gunmetal/30 rounded-2xl p-8 border border-charcoal backdrop-blur-sm">
+              <div className="w-48 h-48 flex-shrink-0 relative rounded-full overflow-hidden border-4 border-silver/20 bg-gunmetal">
+                {/* Placeholder for profile image */}
+                <div className="absolute inset-0 flex items-center justify-center text-gray-500 bg-gunmetal">
+                  <Users className="h-16 w-16 opacity-50" />
+                </div>
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-2xl font-bold text-white mb-4 font-mono">Meet the Lead Engineer</h3>
+                <p className="text-gray-400 mb-6 leading-relaxed">
+                  I am the Systems Engineer behind Rustin Systems. I don&apos;t just fix IT problems; I architect resilient digital infrastructure. Bridging the gap between technical complexity and business goals, I personally oversee every project to ensure long-term reliability.
+                </p>
+                <Link
+                  href="/portfolio"
+                  className="inline-flex items-center text-silver hover:text-white font-medium transition-colors group"
+                >
+                  Read Full Bio
+                  <span className="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
