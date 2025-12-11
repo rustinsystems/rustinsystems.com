@@ -2,8 +2,33 @@ import Link from "next/link";
 import Hero from "@/components/Hero";
 import ServiceCard from "@/components/ServiceCard";
 import { Server, Network, Code, Wrench, Building, Users } from "lucide-react";
+import { getSortedPostsData } from "@/lib/posts";
 
-export default function Home() {
+export default async function Home() {
+  const allPosts = getSortedPostsData();
+
+  const caseStudies = [
+    {
+      id: "Muhammadeyah Pre-Primary: Case Study in IT Modernisation",
+      icon: Building,
+      role: "IT Manager Duties",
+    },
+    {
+      id: "Hadjie Abdullah Solomon Trust: Enterpise Network Infrastructure Overhaul",
+      icon: Users,
+      role: "Infrastructure Manager",
+    }
+  ];
+
+  const projectHighlights = caseStudies.map(study => {
+    const post = allPosts.find(p => p.id === study.id);
+    return {
+      ...study,
+      ...post,
+      href: `/blog/${encodeURIComponent(study.id)}`
+    };
+  }).filter(item => item.title); // Ensure we found the posts
+
   const services = [
     {
       title: "Server Administration",
@@ -83,23 +108,18 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="flex items-start p-6 bg-gunmetal rounded-lg border border-charcoal">
-              <Building className="h-10 w-10 text-silver mr-4 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-bold text-white mb-2">Muhammadeyah Pre-Primary School</h3>
-                <p className="text-gray-400 text-sm mb-2">IT Manager Duties</p>
-                <p className="text-gray-500 text-sm">Managed hardware repairs, staff training, and digital infrastructure modernization.</p>
-              </div>
-            </div>
-
-            <div className="flex items-start p-6 bg-gunmetal rounded-lg border border-charcoal">
-              <Users className="h-10 w-10 text-silver mr-4 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-bold text-white mb-2">Hadjie Abdullah Solomon Family Trust</h3>
-                <p className="text-gray-400 text-sm mb-2">Infrastructure Manager</p>
-                <p className="text-gray-500 text-sm">Oversaw network infrastructure, server maintenance, and system optimization.</p>
-              </div>
-            </div>
+            {projectHighlights.map((project) => (
+              <Link key={project.id} href={project.href} className="block group">
+                <div className="flex items-start p-6 bg-gunmetal rounded-lg border border-charcoal transition-all duration-300 hover:border-silver/50 hover:bg-gunmetal/80 h-full">
+                  <project.icon className="h-10 w-10 text-silver mr-4 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-silver transition-colors">{project.title}</h3>
+                    <p className="text-gray-400 text-sm mb-2">{project.role}</p>
+                    <p className="text-gray-500 text-sm">{project.excerpt}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
