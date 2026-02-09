@@ -28,18 +28,14 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight mb-6 font-mono">
-            Bridging the Gap Between <br className="hidden md:block" />
+            Linux Systems Administrator <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-silver to-gray-400">
-              Hardware Constraints
-            </span>{" "}
-            and <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-silver to-gray-400">
-              Software Architecture
+              Infrastructure Engineer
             </span>
           </h1>
 
           <p className="mt-4 text-xl text-gray-400 max-w-2xl mx-auto mb-10">
-            Specialized IT Solutions, Server Automation, and Network Infrastructure for Small Businesses.
+            Specialized RHEL/Debian environments, automation, and secure network architecture.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -47,7 +43,7 @@ export default function Hero() {
               href="#contact"
               className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-slate-900 bg-silver hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(192,192,192,0.3)]"
             >
-              Get a Consultation
+              Consult on Infrastructure
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link

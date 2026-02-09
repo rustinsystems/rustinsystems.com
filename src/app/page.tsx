@@ -43,16 +43,16 @@ export default async function Home() {
       technologies: ["Cisco", "VyOS", "MikroTik", "VLANs"],
     },
     {
-      title: "Web App Solutions",
-      description: "Custom full-stack development using Next.js and the MERN stack to build scalable, modern web applications.",
+      title: "Secure Remote Access",
+      description: "Implemented a Debian-based VNC gateway for secure, browser-accessible remote desktop environments for education.",
       icon: Code,
-      technologies: ["Next.js", "React", "Node.js", "MongoDB"],
+      technologies: ["Debian", "VNC", "SSH Tunneling", "UFW"],
     },
     {
-      title: "Custom Solutions",
-      description: "Tailored hardware repairs, advanced software diagnostics, and personalized support & training for your team.",
+      title: "End-Point Security & Lifecycle",
+      description: "Hardware diagnostics, fleet upgrades, and automated patch management to extend equipment lifecycle and ensure security.",
       icon: Wrench,
-      technologies: ["Hardware", "Diagnostics", "Support", "Training"],
+      technologies: ["Hardware", "Diagnostics", "Patching", "Security"],
     },
   ];
 
@@ -88,7 +88,7 @@ export default async function Home() {
                   href="/portfolio"
                   className="inline-flex items-center text-silver hover:text-white font-medium transition-colors group"
                 >
-                  Read Full Bio
+                  View Engineering Bio
                   <span className="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
                 </Link>
               </div>
@@ -101,7 +101,7 @@ export default async function Home() {
       <section className="py-20 bg-gunmetal/20 border-y border-charcoal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-4 font-mono">Our Services</h2>
+            <h2 className="text-3xl font-bold text-white mb-4 font-mono">Specialized Engineering Solutions</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
               Specialized technical services designed for efficiency and reliability.
             </p>
@@ -109,8 +109,8 @@ export default async function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service) => (
-              service.title === "Custom Solutions" ? (
-                <Link key={service.title} href="/blog/Video%20to%20Video%20AI%20summary" className="block h-full">
+              service.title === "Secure Remote Access" ? (
+                <Link key={service.title} href="/blog/Secure%20Remote%20Access%20for%20Education" className="block h-full">
                   <ServiceCard {...service} />
                 </Link>
               ) : (
@@ -159,7 +159,7 @@ export default async function Home() {
             href="mailto:contact@rustinsystems.com"
             className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-slate-900 bg-silver hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(192,192,192,0.3)]"
           >
-            Get a Consultation
+            Consult on Infrastructure
           </a>
         </div>
       </section>
