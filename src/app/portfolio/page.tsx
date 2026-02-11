@@ -1,4 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
+import Link from "next/link";
 import { Cpu, Code, Terminal, GraduationCap, Briefcase, Award, Server, Network } from "lucide-react";
 
 export default function Portfolio() {
@@ -34,16 +35,26 @@ export default function Portfolio() {
             description: "Architected a video synthesis pipeline on Arch Linux, optimizing GPU scheduling via CUDA and Python to reduce rendering time by 96%.",
             tags: ["Arch Linux", "CUDA", "Python", "GPU Optimization"],
             highlight: true,
+            href: "/blog/Video%20to%20Video%20AI%20summary",
+        },
+        {
+            title: "Admin Professional: From Digital Identity to Physical Resilience",
+            description: "Full-stack Next.js web presence and office infrastructure overhaul ensuring operational continuity during power instability.",
+            tags: ["Next.js", "Zoho Mail", "UPS", "Infrastructure"],
+            highlight: true,
+            href: "/blog/Admin%20Professional:%20From%20Digital%20Identity%20to%20Physical%20Resilience",
         },
         {
             title: "Municipal Infrastructure Database",
             description: "Designed a Neo4j graph database to model complex public works dependencies, outperforming MySQL in query speed for deep-link relationships.",
             tags: ["Neo4j", "Graph Theory", "Database Design"],
+            href: "/blog",
         },
         {
             title: "IoT Ecosystem & Automation Orchestration",
             description: "Custom IoT ecosystem with NAS integration, IP surveillance, and Docker orchestration for a smart home environment.",
             tags: ["IoT", "Docker", "Home Assistant", "Networking"],
+            href: "/blog",
         },
     ];
 
@@ -221,7 +232,9 @@ export default function Portfolio() {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         {projects.map((project) => (
-                            <ProjectCard key={project.title} {...project} />
+                            <Link key={project.title} href={project.href} className="block h-full">
+                                <ProjectCard {...project} />
+                            </Link>
                         ))}
                     </div>
                 </div>
