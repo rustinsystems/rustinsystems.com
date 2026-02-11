@@ -10,7 +10,7 @@ export default function Footer() {
                             RUSTIN<span className="text-silver">SYSTEMS</span>
                         </span>
                         <p className="text-gray-400 text-sm mt-2">
-                            Bridging Hardware Constraints & Software Architecture
+                            Architecting secure systems from the metal up
                         </p>
                     </div>
 

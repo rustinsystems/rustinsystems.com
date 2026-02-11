@@ -1,5 +1,5 @@
 ---
-title: "Secure Remote Access for Education"
+title: "Secure Remote Access for Education IN PROGRESS"
 date: "2024-03-15"
 excerpt: "Secure VNC gateway solution for remote student access."
 tags: ["Debian", "VNC", "SSH", "Security"]
@@ -7,7 +7,7 @@ tags: ["Debian", "VNC", "SSH", "Security"]
 
 ## The Challenge
 
-Students needed reliable remote access to campus resources during off-campus hours. The existing VPN solution was unreliable and difficult to configure on student devices.
+Students needed reliable remote access to campus resources during off-campus hours. The existing solution was unreliable on campus and difficult to setup and maintain single user accounts for multiple students.
 
 ## The Solution
 
