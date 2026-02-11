@@ -17,6 +17,11 @@ export default async function Home() {
       id: "Hadjie Abdullah Solomon Trust: Enterpise Network Infrastructure Overhaul",
       icon: Building,
       role: "Infrastructure Manager, Network Architect",
+    },
+    {
+      id: "Admin Professional: From Digital Identity to Physical Resilience",
+      icon: Code,
+      role: "Full Stack Engineer & Infrastructure Architect",
     }
   ];
 
@@ -55,6 +60,14 @@ export default async function Home() {
       technologies: ["Hardware", "Diagnostics", "Patching", "Security"],
     },
   ];
+
+  // Map services to blog posts or general blog page
+  const serviceLinks: Record<string, string> = {
+    "Server Administration": "/blog/Muhammadeyah%20Pre-Primary:%20Case%20Study%20in%20IT%20Modernisation", // Example mapping based on content
+    "Network Infrastructure": "/blog/Hadjie%20Abdullah%20Solomon%20Trust:%20Enterpise%20Network%20Infrastructure%20Overhaul",
+    "Secure Remote Access": "/blog/Secure%20Remote%20Access%20for%20Education%20IN%20PROGRESS",
+    "End-Point Security & Lifecycle": "/blog", // General fallback or specific post if available
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -107,15 +120,14 @@ export default async function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service) => (
-              service.title === "Secure Remote Access" ? (
-                <Link key={service.title} href="/blog/Secure%20Remote%20Access%20for%20Education" className="block h-full">
+            {services.map((service) => {
+              const link = serviceLinks[service.title] || "/blog";
+              return (
+                <Link key={service.title} href={link} className="block h-full">
                   <ServiceCard {...service} />
                 </Link>
-              ) : (
-                <ServiceCard key={service.title} {...service} />
-              )
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
