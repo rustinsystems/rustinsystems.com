@@ -32,7 +32,7 @@ export default async function Home() {
   const services = [
     {
       title: "Server Administration",
-      description: "Comprehensive management of Linux environments (Arch/Debian/Ubuntu), Synology NAS systems, and Docker container orchestration.",
+      description: "Comprehensive management of Linux environments (Arch/Debian/Ubuntu/RHEL), Synology NAS systems, and Docker container orchestration.",
       icon: Server,
       technologies: ["Linux", "Docker", "Synology", "Bash"],
     },
@@ -64,10 +64,9 @@ export default async function Home() {
       <section className="py-20 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl font-bold text-white mb-6 font-mono">Engineering-Led IT Solutions</h2>
+            <h2 className="text-3xl font-bold text-white mb-6 font-mono">Rustin Systems - Engineering Solutions</h2>
             <p className="text-lg text-gray-400 leading-relaxed">
-              Rustin Systems helps small businesses modernise and optimise digital systems using an engineering lens.
-              We don&apos;t just fix problems; we architect solutions that bridge the gap between hardware constraints and software requirements.
+              Engineering-Led Infrastructure Solutions. Rustin Systems bridges the gap between hardware constraints and software requirements. We replace reactive IT support with proactive engineering, utilizing industry-standard Linux orchestration and network optimization to build systems that scale
             </p>
           </div>
 

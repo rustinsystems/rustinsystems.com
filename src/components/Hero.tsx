@@ -28,9 +28,9 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight mb-6 font-mono">
-            Linux Systems Administrator <br className="hidden md:block" />
+            Linux Infrastructure & Network Engineering <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-silver to-gray-400">
-              Infrastructure Engineer
+              Architecting secure systems from the metal up.
             </span>
           </h1>
 
@@ -59,7 +59,7 @@ export default function Hero() {
           <div className="p-6 rounded-lg bg-gunmetal/30 border border-charcoal backdrop-blur-sm">
             <Server className="h-10 w-10 text-silver mx-auto mb-4" />
             <h3 className="text-lg font-bold text-white mb-2">Server Automation</h3>
-            <p className="text-gray-400 text-sm">Linux (Arch/Debian), Docker orchestration, and custom NAS solutions.</p>
+            <p className="text-gray-400 text-sm">Linux (Arch/Debian/RHEL), Docker orchestration, and custom NAS solutions.</p>
           </div>
           <div className="p-6 rounded-lg bg-gunmetal/30 border border-charcoal backdrop-blur-sm">
             <ShieldCheck className="h-10 w-10 text-silver mx-auto mb-4" />
