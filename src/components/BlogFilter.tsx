@@ -60,14 +60,14 @@ export default function BlogFilter({ posts }: BlogFilterProps) {
             {/* Posts Grid */}
             <div className="grid gap-8">
                 {filteredPosts.map(({ id, date, title, excerpt, tags }) => (
-                    <article key={id} className="bg-gunmetal/30 border border-charcoal rounded-lg p-8 hover:border-silver transition-all duration-300 group">
-                        <div className="flex items-center justify-between mb-3">
+                    <article key={id} className="bg-gunmetal/30 border border-charcoal rounded-lg p-6 md:p-8 hover:border-silver transition-all duration-300 group">
+                        <div className="flex flex-col md:flex-row md:items-center justify-between mb-3 gap-2">
                             <div className="flex items-center text-sm text-gray-500 font-mono">
                                 <Calendar className="h-4 w-4 mr-2" />
                                 {date}
                             </div>
                             {tags && tags.length > 0 && (
-                                <div className="flex gap-2">
+                                <div className="flex flex-wrap gap-2">
                                     {tags.map(tag => (
                                         <span key={tag} className="text-xs text-silver bg-slate-900 px-2 py-0.5 rounded border border-charcoal">
                                             {tag}

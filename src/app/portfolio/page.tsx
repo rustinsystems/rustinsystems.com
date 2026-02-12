@@ -240,15 +240,15 @@ export default function Portfolio() {
                 </div>
 
                 {/* Education & Certifications */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-25">
                     {/* Education */}
                     <div>
                         <h2 className="text-2xl font-bold text-white mb-8 flex items-center">
                             <span className="w-8 h-1 bg-silver mr-4"></span>
                             Education
                         </h2>
-                        <div className="bg-gunmetal p-8 rounded-lg border border-charcoal flex items-start h-full">
-                            <div className="bg-slate-900 p-3 rounded-full mr-6 border border-charcoal flex-shrink-0">
+                        <div className="bg-gunmetal p-6 md:p-8 rounded-lg border border-charcoal flex flex-col md:flex-row items-start h-full border-l-blue-600">
+                            <div className="bg-slate-900 p-3 rounded-full mb-4 md:mb-0 md:mr-6 border border-charcoal flex-shrink-0">
                                 <GraduationCap className="h-8 w-8 text-silver" />
                             </div>
                             <div>
@@ -267,8 +267,8 @@ export default function Portfolio() {
                             <span className="w-8 h-1 bg-silver mr-4"></span>
                             Certifications
                         </h2>
-                        <div className="bg-gunmetal p-8 rounded-lg border border-charcoal flex items-start h-full border-l-4 border-l-red-600">
-                            <div className="bg-slate-900 p-3 rounded-full mr-6 border border-charcoal flex-shrink-0">
+                        <div className="bg-gunmetal p-6 md:p-8 rounded-lg border border-charcoal flex flex-col md:flex-row items-start h-full border-l-4 border-l-red-600">
+                            <div className="bg-slate-900 p-3 rounded-full mb-4 md:mb-0 md:mr-6 border border-charcoal flex-shrink-0">
                                 <Award className="h-8 w-8 text-silver" />
                             </div>
                             <div>
