@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Rustin Systems - Engineering Solutions
 
-## Getting Started
+> **Engineering-Led Infrastructure Solutions bridging hardware constraints and software requirements.**
 
-First, run the development server:
+## 📖 Overview
+This repository hosts the source code for the **Rustin Systems** official website, a Next.js application designed to showcase specialized IT solutions, server automation, and network infrastructure engineering.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The platform serves as a digital portfolio and client portal, detailing expertise in Linux orchestration, network optimization, and secure remote access architectures.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Operational Logic
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The application is built on **Next.js 16** and **React 19**, utilizing a component-based architecture to present complex engineering services clearly.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Dynamic Content Management
+Instead of static HTML, the site uses a markdown-based CMS approach for case studies and blog posts.
 
-## Learn More
+*   **`lib/posts.tsx`**: Handles the retrieval and sorting of markdown files from the `content/` directory.
+*   **Case Studies**: Dynamically mapped from markdown content to the "Project Highlights" and "Services" sections, ensuring the portfolio stays up-to-date with the latest engineering feats.
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Isomorphic Rendering
+*   **Server Components**: Utilized for the majority of the pages (like `src/app/page.tsx`) to ensure optimal SEO and performance.
+*   **Client Components**: Interactive UI elements (like the Navbar and mobile menu) are hydrated on the client side for responsiveness.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Styling & Design System
+*   **Tailwind CSS v4**: A utility-first CSS framework configured for a "Gunmetal" and "Silver" aesthetic, reflecting the industrial robustness of the services offered.
+*   **Typography**: Uses `Inter` and `Roboto Mono` to maintain a clean, technical visual identity.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📂 Repository Structure
 
-## Deploy on Vercel
+| File/Directory | Description |
+| :--- | :--- |
+| `src/app/page.tsx` | **Main Landing:** The home page aggregating Hero, About, Services, and Highlights. |
+| `src/components/` | **UI Components:** Reusable blocks like `Hero`, `ServiceCard`, `Navbar`, and `Footer`. |
+| `content/` | **Case Studies:** Markdown files documenting engineering projects and blogs. |
+| `src/lib/` | **Utilities:** Helper functions for data fetching and logic. |
+| `public/` | **Assets:** Static images and icons. |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🏗️ Deployment Context
+This site is designed to be deployed on **Vercel** or any Node.js compatible hosting environment.
+*   **CI/CD:** Automated builds on commit.
+*   **Performance:** Optimized for Core Web Vitals with Next.js image optimization and font loading.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+<div align="center">
+  <p><i>Engineered by <a href="https://rustinsystems.com">Rustin Systems</a></i></p>
+  <p>Bridging Hardware Constraints & Software Architecture</p>
+</div>
