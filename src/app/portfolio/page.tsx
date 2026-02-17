@@ -5,27 +5,30 @@ import { Cpu, Code, Terminal, GraduationCap, Briefcase, Award, Server, Network }
 export default function Portfolio() {
     const skills = {
         infrastructure: [
-            "RHEL 9 / Debian / Arch Linux",
-            "Systemd / SELinux",
+            "RHEL 9, Debian, Arch Linux",
+            "Systemd, SELinux",
             "User Management",
             "Bash Scripting",
         ],
         cloud: [
-            "Docker / Containerization",
+            "Docker",
             "KVM / QEMU",
             "AWS (EC2/S3 basics)",
             "Synology NAS",
+            "Proxmox",
         ],
         networking: [
-            "TCP/IP & DNS",
-            "VPN (WireGuard/OpenVPN)",
+            "TCP/IP Stack",
+            "DNS Management (CloudDNS)",
+            "VPN Configuration (WireGuard/OpenVPN)",
             "UFW / Firewalld",
-            "VLAN Configuration",
+            "Network Flow Optimisation",
         ],
         development: [
             "Python (Automation)",
             "Git / GitHub",
             "CI/CD Pipelines",
+            "SQL / Neo4j",
         ],
     };
 
@@ -64,29 +67,45 @@ export default function Portfolio() {
             role: "Linux Systems Administrator (Contract)",
             period: "Jan 2022 – Present",
             achievements: [
-                "Designed and maintained Debian/Ubuntu server environments for SME clients, ensuring 99.9% uptime and secure remote access via SSH/VNC.",
-                "Deployed containerized applications using Docker and Nginx reverse proxies, reducing hardware dependency by 40%.",
-                "Automated system backups and security patching using custom Bash scripts and Cron jobs.",
-                "Configured Synology NAS solutions for centralized data management and off-site disaster recovery."
-            ]
-        },
-        {
-            company: "Muhammadeyah Pre-Primary School",
-            role: "Network Administrator",
-            period: "Feb 2022 – Nov 2022",
-            achievements: [
-                "Managed the campus network infrastructure, optimizing Wi-Fi coverage and LAN security for staff and administration.",
-                "Administered Microsoft 365 user accounts, email policies, and endpoint security protocols.",
-                "Performed hardware diagnostics and upgrades on fleet workstations, extending hardware lifecycle by 2 years."
+                "Specialized in designing and maintaining high-availability Linux infrastructure for SME clients.",
+                "Infrastructure & Virtualization: Provisioned and managed Debian/RHEL server environments, utilizing Docker for containerized application deployment and resource isolation.",
+                "Network Architecture: Optimized network topology using Cisco, VyOS, and MikroTik equipment to reduce latency and ensure secure remote access via VPN/SSH tunneling.",
+                "Automation & Backup: Engineered automated backup solutions using Bash scripting and Cron jobs, integrating Synology NAS for off-site disaster recovery.",
+                "Systems Integration: Deployed NextJS/MERN web applications with Nginx reverse proxies and SSL termination."
             ]
         },
         {
             company: "Hadjie Abdullah Solomon Family Trust",
-            role: "Infrastructure Support Engineer (Project)",
-            period: "Oct 2022",
+            role: "Infrastructure Engineer and Systems Architect (Contract)",
+            period: "Oct 2022 – Present",
             achievements: [
-                "Deployed a fault-tolerant backup power system (UPS/Inverter integration) for critical network equipment.",
-                "Implemented a Synology NAS private cloud with automated self-hosted email backups."
+                "Architected a comprehensive digital transformation strategy, transitioning the organization from legacy infrastructure to a resilient, self-hosted ecosystem.",
+                "AI-Driven Security: Orchestrated a containerized surveillance system using Docker and Frigate NVR on headless Debian, leveraging Raspberry Pi edge nodes for real-time object detection.",
+                "Network Security: Secured remote site administration via WireGuard VPN tunneling and hardened MikroTik routing configurations to eliminate attack surface exposure.",
+                "Power Engineering: Designed and fabricated a custom DC-DC power distribution system interfacing with EcoFlow units, guaranteeing 100% network uptime during grid instability.",
+                "Data Sovereignty: Deployed a Synology NAS private cloud architecture with automated fleet backups, ensuring data integrity without reliance on public cloud subscriptions."
+            ]
+        },
+        {
+            company: "Admin Professional",
+            role: "Full Stack Engineer & Infrastructure Consultant (Contract)",
+            period: "Feb 2022 – Oct 2022",
+            achievements: [
+                "Engineered a hybrid digital transformation strategy, combining modern web performance with physical operational resilience.",
+                "Business Continuity: Designed and deployed a “Zero-Downtime” connectivity solution, integrating dedicated Network UPS systems to maintain Wi-Fi infrastructure during grid instability.",
+                "Full-Stack Development: Architected a high-performance corporate platform using Next.js and React, delivering sub-second load times.",
+                "Identity Management: Executed a complete domain migration and DNS configuration via Zoho Mail, establishing secure, branded communication channels."
+            ]
+        },
+        {
+            company: "Muhammadeyah Pre-Primary School",
+            role: "Network Administrator (Freelance)",
+            period: "Feb 2022 – Nov 2022",
+            achievements: [
+                "Executed a holistic IT modernization strategy, stabilizing campus infrastructure and extending asset lifecycles to reduce capital expenditure.",
+                "Infrastructure Resilience: Overhauled the campus network architecture, eliminating dead zones and deploying dedicated UPS power backup solutions to ensure continuous connectivity.",
+                "Asset Lifecycle Management: Extended workstation hardware lifespan by an estimated 2 years through deep-level diagnostics and strategic component upgrades (SSD/RAM).",
+                "Cloud Administration: Standardized the digital environment via Microsoft 365, configuring unified security policies and optimizing Windows 10/11 fleet performance."
             ]
         }
     ];
@@ -254,6 +273,7 @@ export default function Portfolio() {
                             <div>
                                 <h3 className="text-xl font-bold text-white">BEngTech in Computer Engineering</h3>
                                 <p className="text-silver font-mono mt-1">Cape Peninsula University of Technology (CPUT)</p>
+                                <p className="text-gray-500 mt-2 text-sm font-mono">Feb 2021 – Nov 2025</p>
                                 <p className="text-gray-500 mt-4 text-sm">
                                     Focus on embedded systems, software engineering, and network infrastructure.
                                 </p>
@@ -277,6 +297,14 @@ export default function Portfolio() {
                                 <p className="text-gray-500 mt-4 text-sm">
                                     Validating proficiency in RHEL system administration, users, security, and automation.
                                 </p>
+
+                                <div className="mt-6 border-t border-charcoal/50 pt-6">
+                                    <h3 className="text-xl font-bold text-white">Certified Full Stack Web Developer</h3>
+                                    <p className="text-silver font-mono mt-1">AstroLabs, Dubai (UAE) | 2022</p>
+                                    <p className="text-gray-500 mt-4 text-sm">
+                                        MERN Stack: React.js, Node.js, and DevOps basics. Architected the commercial platform for Admin Professional.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

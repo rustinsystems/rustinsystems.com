@@ -11,17 +11,17 @@ export default async function Home() {
     {
       id: "Muhammadeyah Pre-Primary: Case Study in IT Modernisation",
       icon: Users,
-      role: "Infrastructure Digital Optimisation",
+      role: "Network Administrator (Freelance)",
     },
     {
       id: "Hadjie Abdullah Solomon Trust: Enterpise Network Infrastructure Overhaul",
       icon: Building,
-      role: "Infrastructure Manager, Network Architect",
+      role: "Infrastructure Engineer and Systems Architect (Contract)",
     },
     {
       id: "Admin Professional: From Digital Identity to Physical Resilience",
       icon: Code,
-      role: "Full Stack Engineer & Infrastructure Architect",
+      role: "Full Stack Engineer & Infrastructure Consultant (Contract)",
     }
   ];
 
