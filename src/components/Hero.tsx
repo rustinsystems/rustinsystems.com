@@ -13,7 +13,7 @@ export default function Hero() {
           <div className="flex justify-center mb-8">
             <div className="relative w-32 h-32 md:w-40 md:h-40">
               <Image
-                src="/images/logo.png"
+                src="/icon.webp"
                 alt="Rustin Systems Logo"
                 fill
                 className="object-contain drop-shadow-[0_0_15px_rgba(192,192,192,0.3)]"

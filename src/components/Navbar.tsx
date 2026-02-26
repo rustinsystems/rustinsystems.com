@@ -22,7 +22,7 @@ export default function Navbar() {
                         <Link href="/" className="flex items-center space-x-3">
                             <div className="relative h-10 w-10">
                                 <Image
-                                    src="/images/logo.png"
+                                    src="/icon.webp"
                                     alt="Rustin Systems Logo"
                                     fill // Use fill for Image component
                                     className="object-contain"
