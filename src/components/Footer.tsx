@@ -15,11 +15,11 @@ export default function Footer() {
                     </div>
 
                     <div className="flex space-x-6">
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://github.com/rustinsystems/" className="text-gray-400 hover:text-white transition-colors">
                             <Github className="h-6 w-6" />
                             <span className="sr-only">GitHub</span>
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.linkedin.com/company/rustin-systems" className="text-gray-400 hover:text-white transition-colors">
                             <Linkedin className="h-6 w-6" />
                             <span className="sr-only">LinkedIn</span>
                         </a>
