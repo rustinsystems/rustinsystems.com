@@ -63,6 +63,17 @@ export default function Portfolio() {
 
     const experience = [
         {
+            company: "Cape Peninsula University of Technology (CPUT)",
+            role: "Linux Infrastructure Engineer (via Rustin Systems)",
+            period: "Feb 2026 – Present",
+            achievements: [
+                "Architected and deployed an automated Virtual Desktop Infrastructure (VDI) to support 30+ concurrent engineering students for remote laboratory access.",
+                "Infrastructure as Code: Authored idempotent Ansible playbooks to fully automate bare-metal server provisioning, custom kernel locking, XFCE GUI optimization, and XRDP configuration.",
+                "Identity & Access Management: Engineered a bespoke Bash-based CLI management tool for faculty, automating user lifecycle management, virtualization group permissions, and \"Golden Image\" desktop cloning.",
+                "Enterprise Networking: Designed a secure ingress architecture using Cloudflare Zero Trust (SD-WAN), successfully bypassing strict enterprise NAT/firewall restrictions without compromising campus security."
+            ]
+        },
+        {
             company: "Rustin Systems",
             role: "Linux Systems Administrator (Contract)",
             period: "Jan 2022 – Present",
