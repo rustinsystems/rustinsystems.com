@@ -19,11 +19,11 @@ export default function Footer() {
                             <Github className="h-6 w-6" />
                             <span className="sr-only">GitHub</span>
                         </a>
-                        <a href="https://www.linkedin.com/company/rustin-systems" className="text-gray-400 hover:text-white transition-colors">
+                        <a href="https://www.linkedin.com/in/shahied-rustin/" className="text-gray-400 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
                             <Linkedin className="h-6 w-6" />
                             <span className="sr-only">LinkedIn</span>
                         </a>
-                        <a href="mailto:contact@rustinsystems.com" className="text-gray-400 hover:text-white transition-colors">
+                        <a href="mailto:shahied@rustinsystems.com" className="text-gray-400 hover:text-white transition-colors">
                             <Mail className="h-6 w-6" />
                             <span className="sr-only">Email</span>
                         </a>

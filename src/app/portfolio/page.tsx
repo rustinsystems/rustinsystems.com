@@ -1,6 +1,6 @@
 import ProjectCard from "@/components/ProjectCard";
 import Link from "next/link";
-import { Cpu, Code, Terminal, GraduationCap, Briefcase, Award, Server, Network } from "lucide-react";
+import { Cpu, Code, Terminal, GraduationCap, Briefcase, Award, Server, Network, Linkedin, Mail } from "lucide-react";
 
 export default function Portfolio() {
     const skills = {
@@ -119,14 +119,21 @@ export default function Portfolio() {
                         <h1 className="text-4xl font-bold text-white mb-4 font-mono">Shahied Rustin</h1>
                         <p className="text-xl text-silver font-mono">Linux Systems Administrator | Infrastructure Engineer</p>
                     </div>
-                    <a
-                        href="/Shahied_Rustin_Linux_Admin.pdf"
-                        download
-                        className="mt-6 md:mt-0 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-slate-900 bg-silver hover:bg-white transition-all duration-300 shadow-[0_0_15px_rgba(192,192,192,0.2)]"
-                    >
-                        <span className="mr-2">Download CV</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" x2="12" y1="15" y2="3" /></svg>
-                    </a>
+                    <div className="mt-6 md:mt-0 flex flex-col md:flex-row items-center gap-4">
+                        <span className="inline-flex items-center px-6 py-3 border border-charcoal text-base font-medium rounded-md text-silver bg-gunmetal/80 cursor-default">
+                            CV available on request
+                        </span>
+                        <div className="flex space-x-4">
+                            <a href="https://www.linkedin.com/in/shahied-rustin/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors bg-gunmetal/80 p-3 rounded-full border border-charcoal hover:border-silver flex items-center justify-center">
+                                <Linkedin className="h-5 w-5" />
+                                <span className="sr-only">LinkedIn</span>
+                            </a>
+                            <a href="mailto:shahied@rustinsystems.com" className="text-gray-400 hover:text-white transition-colors bg-gunmetal/80 p-3 rounded-full border border-charcoal hover:border-silver flex items-center justify-center">
+                                <Mail className="h-5 w-5" />
+                                <span className="sr-only">Email</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 

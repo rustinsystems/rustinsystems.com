@@ -167,7 +167,7 @@ export default async function Home() {
             Get a consultation to discuss how we can improve your business systems.
           </p>
           <a
-            href="mailto:contact@rustinsystems.com"
+            href="mailto:shahied@rustinsystems.com"
             className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-slate-900 bg-silver hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(192,192,192,0.3)]"
           >
             Consult on Infrastructure
