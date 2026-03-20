@@ -5,34 +5,39 @@ import { Cpu, Code, Terminal, GraduationCap, Briefcase, Award, Server, Network, 
 export default function Portfolio() {
     const skills = {
         infrastructure: [
-            "RHEL 9, Debian, Arch Linux",
+            "RHEL, CentOS, Debian, Ubuntu, Arch Linux",
             "Systemd, SELinux",
-            "User Management",
-            "Bash Scripting",
+            "Identity & Access Management",
         ],
         cloud: [
             "Docker",
-            "KVM / QEMU",
-            "AWS (EC2/S3 basics)",
+            "KVM / QEMU, Proxmox",
+            "Virtual Desktop Infrastructure (VDI)",
             "Synology NAS",
-            "Proxmox",
+            "AWS (EC2/S3)",
         ],
         networking: [
             "TCP/IP Stack",
-            "DNS Management (CloudDNS)",
+            "Cloudflare Zero Trust (SD-WAN)",
             "VPN Configuration (WireGuard/OpenVPN)",
-            "UFW / Firewalld",
-            "Network Flow Optimisation",
+            "Firewalls (UFW/Firewalld/MikroTik)",
         ],
         development: [
-            "Python (Automation)",
+            "Ansible (IaC)",
+            "Bash, Python",
             "Git / GitHub",
             "CI/CD Pipelines",
-            "SQL / Neo4j",
         ],
     };
 
     const projects = [
+        {
+            title: "Cape Peninsula University of Technology: Enterprise VDI Deployment",
+            description: "Architected and deployed an automated Virtual Desktop Infrastructure (VDI) to support concurrent engineering students for remote laboratory access.",
+            tags: ["VDI", "Ansible", "Linux", "Networking"],
+            highlight: true,
+            href: "/blog/Cape%20Peninsula%20University%20of%20Technology:%20Enterprise%20VDI%20Deployment",
+        },
         {
             title: "High-Performance AI Infrastructure",
             description: "Architected a video synthesis pipeline on Arch Linux, optimizing GPU scheduling via CUDA and Python to reduce rendering time by 96%.",
@@ -64,10 +69,10 @@ export default function Portfolio() {
     const experience = [
         {
             company: "Cape Peninsula University of Technology (CPUT)",
-            role: "Linux Infrastructure Engineer (via Rustin Systems)",
+            role: "Linux Infrastructure Engineer",
             period: "Feb 2026 – Present",
             achievements: [
-                "Architected and deployed an automated Virtual Desktop Infrastructure (VDI) to support 30+ concurrent engineering students for remote laboratory access.",
+                "Architected and deployed an automated Virtual Desktop Infrastructure (VDI) to support 10+ concurrent engineering students for remote laboratory access.",
                 "Infrastructure as Code: Authored idempotent Ansible playbooks to fully automate bare-metal server provisioning, custom kernel locking, XFCE GUI optimization, and XRDP configuration.",
                 "Identity & Access Management: Engineered a bespoke Bash-based CLI management tool for faculty, automating user lifecycle management, virtualization group permissions, and \"Golden Image\" desktop cloning.",
                 "Enterprise Networking: Designed a secure ingress architecture using Cloudflare Zero Trust (SD-WAN), successfully bypassing strict enterprise NAT/firewall restrictions without compromising campus security."
@@ -75,48 +80,14 @@ export default function Portfolio() {
         },
         {
             company: "Rustin Systems",
-            role: "Linux Systems Administrator (Contract)",
+            role: "Lead IT Consultant & Systems Administrator",
             period: "Jan 2022 – Present",
+            description: "Founded and operated an independent IT consultancy concurrent with earning a BEngTech in Computer Engineering, delivering high-availability infrastructure, network security, and digital transformation solutions to SME clients.",
             achievements: [
-                "Specialized in designing and maintaining high-availability Linux infrastructure for SME clients.",
-                "Infrastructure & Virtualization: Provisioned and managed Debian/RHEL server environments, utilizing Docker for containerized application deployment and resource isolation.",
-                "Network Architecture: Optimized network topology using Cisco, VyOS, and MikroTik equipment to reduce latency and ensure secure remote access via VPN/SSH tunneling.",
-                "Automation & Backup: Engineered automated backup solutions using Bash scripting and Cron jobs, integrating Synology NAS for off-site disaster recovery.",
-                "Systems Integration: Deployed NextJS/MERN web applications with Nginx reverse proxies and SSL termination."
-            ]
-        },
-        {
-            company: "Hadjie Abdullah Solomon Family Trust",
-            role: "Infrastructure Engineer and Systems Architect (Contract)",
-            period: "Oct 2022 – Present",
-            achievements: [
-                "Architected a comprehensive digital transformation strategy, transitioning the organization from legacy infrastructure to a resilient, self-hosted ecosystem.",
-                "AI-Driven Security: Orchestrated a containerized surveillance system using Docker and Frigate NVR on headless Debian, leveraging Raspberry Pi edge nodes for real-time object detection.",
-                "Network Security: Secured remote site administration via WireGuard VPN tunneling and hardened MikroTik routing configurations to eliminate attack surface exposure.",
-                "Power Engineering: Designed and fabricated a custom DC-DC power distribution system interfacing with EcoFlow units, guaranteeing 100% network uptime during grid instability.",
-                "Data Sovereignty: Deployed a Synology NAS private cloud architecture with automated fleet backups, ensuring data integrity without reliance on public cloud subscriptions."
-            ]
-        },
-        {
-            company: "Admin Professional",
-            role: "Full Stack Engineer & Infrastructure Consultant (Contract)",
-            period: "Feb 2022 – Oct 2022",
-            achievements: [
-                "Engineered a hybrid digital transformation strategy, combining modern web performance with physical operational resilience.",
-                "Business Continuity: Designed and deployed a “Zero-Downtime” connectivity solution, integrating dedicated Network UPS systems to maintain Wi-Fi infrastructure during grid instability.",
-                "Full-Stack Development: Architected a high-performance corporate platform using Next.js and React, delivering sub-second load times.",
-                "Identity Management: Executed a complete domain migration and DNS configuration via Zoho Mail, establishing secure, branded communication channels."
-            ]
-        },
-        {
-            company: "Muhammadeyah Pre-Primary School",
-            role: "Network Administrator (Freelance)",
-            period: "Feb 2022 – Nov 2022",
-            achievements: [
-                "Executed a holistic IT modernization strategy, stabilizing campus infrastructure and extending asset lifecycles to reduce capital expenditure.",
-                "Infrastructure Resilience: Overhauled the campus network architecture, eliminating dead zones and deploying dedicated UPS power backup solutions to ensure continuous connectivity.",
-                "Asset Lifecycle Management: Extended workstation hardware lifespan by an estimated 2 years through deep-level diagnostics and strategic component upgrades (SSD/RAM).",
-                "Cloud Administration: Standardized the digital environment via Microsoft 365, configuring unified security policies and optimizing Windows 10/11 fleet performance."
+                "Hadjie Abdullah Solomon Family Trust: Architected a resilient, self-hosted ecosystem transitioning the organization from legacy infrastructure. Orchestrated a containerized surveillance system (Docker/Frigate NVR) on headless Debian and secured remote administration via WireGuard VPN and hardened MikroTik routing.",
+                "Admin Professional: Designed a hybrid digital transformation strategy and a \"Zero-Downtime\" connectivity solution utilizing dedicated UPS systems. Architected a high-performance corporate web platform achieving sub-second load times.",
+                "Muhammadeyah Pre-Primary School: Overhauled campus network architecture, deployed dedicated power backup solutions, and standardized the digital environment via Microsoft 365. Extended workstation hardware lifecycles through strategic upgrades and deep-level diagnostics.",
+                "Internal Infrastructure: Provisioned and managed Debian/RHEL server environments, engineered automated backup solutions integrating Synology NAS for disaster recovery, and deployed NextJS/MERN applications with Nginx reverse proxies."
             ]
         }
     ];
@@ -156,10 +127,9 @@ export default function Portfolio() {
                         About Me
                     </h2>
                     <p className="text-lg text-gray-400 leading-relaxed border-l-2 border-charcoal pl-6">
-                        I am an Infrastructure Engineer and Linux Administrator focused on building reliable, secure systems. With a BEngTech in Computer Engineering, I move beyond &apos;making it work&apos; to &apos;making it scale.&apos;
+                        Linux Systems Administrator and Infrastructure Engineer with 3+ years of commercial experience designing, deploying, and maintaining scalable Linux and cloud environments. Successfully operated an independent IT consultancy concurrent with earning a BEngTech in Computer Engineering.
                         <br /><br />
-                        My core focus is <strong>Linux Systems Administration</strong> (RHEL/Debian), <strong>Automation</strong>, and <strong>Network Security</strong>.
-                        I am actively seeking roles in Linux Administration, NOC, or DevOps where I can apply engineering rigor to IT operations.
+                        Specialized in RHEL/Debian systems, infrastructure automation (Ansible/Bash), and secure network architecture. Proven track record of managing end-to-end project lifecycles from initial architecture to comprehensive documentation and client handover. I move beyond simply &quot;making it work&quot; to designing secure, resilient IT operations.
                     </p>
                 </div>
 
@@ -174,7 +144,7 @@ export default function Portfolio() {
                         <div className="bg-gunmetal/30 p-6 rounded-lg border border-charcoal">
                             <div className="flex items-center mb-4 text-silver">
                                 <Terminal className="h-6 w-6 mr-2" />
-                                <h3 className="text-lg font-bold font-mono">Infrastructure</h3>
+                                <h3 className="text-lg font-bold font-mono">OS & Core Admin</h3>
                             </div>
                             <ul className="space-y-2">
                                 {skills.infrastructure.map(skill => (
@@ -189,7 +159,7 @@ export default function Portfolio() {
                         <div className="bg-gunmetal/30 p-6 rounded-lg border border-charcoal">
                             <div className="flex items-center mb-4 text-silver">
                                 <Server className="h-6 w-6 mr-2" />
-                                <h3 className="text-lg font-bold font-mono">Cloud & Virt</h3>
+                                <h3 className="text-lg font-bold font-mono">Infrastructure & Virt</h3>
                             </div>
                             <ul className="space-y-2">
                                 {skills.cloud.map(skill => (
@@ -204,7 +174,7 @@ export default function Portfolio() {
                         <div className="bg-gunmetal/30 p-6 rounded-lg border border-charcoal">
                             <div className="flex items-center mb-4 text-silver">
                                 <Network className="h-6 w-6 mr-2" />
-                                <h3 className="text-lg font-bold font-mono">Networking</h3>
+                                <h3 className="text-lg font-bold font-mono">Networking & Security</h3>
                             </div>
                             <ul className="space-y-2">
                                 {skills.networking.map(skill => (
@@ -219,7 +189,7 @@ export default function Portfolio() {
                         <div className="bg-gunmetal/30 p-6 rounded-lg border border-charcoal">
                             <div className="flex items-center mb-4 text-silver">
                                 <Code className="h-6 w-6 mr-2" />
-                                <h3 className="text-lg font-bold font-mono">Development</h3>
+                                <h3 className="text-lg font-bold font-mono">Automation & Scripting</h3>
                             </div>
                             <ul className="space-y-2">
                                 {skills.development.map(skill => (
@@ -249,6 +219,9 @@ export default function Portfolio() {
                                     <span className="text-silver font-mono text-sm bg-gunmetal/80 px-3 py-1 rounded border border-charcoal mt-2 md:mt-0 inline-block">{job.period}</span>
                                 </div>
                                 <h4 className="text-lg text-silver mb-4 font-mono relative z-10">{job.company}</h4>
+                                {"description" in job && job.description && (
+                                    <p className="text-gray-400 mb-6 relative z-10 leading-relaxed italic">{job.description}</p>
+                                )}
                                 <ul className="space-y-2 relative z-10">
                                     {job.achievements.map((item, index) => (
                                         <li key={index} className="text-gray-400 text-sm flex items-start">
@@ -289,7 +262,7 @@ export default function Portfolio() {
                                 <GraduationCap className="h-8 w-8 text-silver" />
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold text-white">BEngTech in Computer Engineering</h3>
+                                <h3 className="text-xl font-bold text-white">Bachelor of Engineering Technology in Computer Engineering (NQF 7)</h3>
                                 <p className="text-silver font-mono mt-1">Cape Peninsula University of Technology (CPUT)</p>
                                 <p className="text-gray-500 mt-2 text-sm font-mono">Feb 2021 – Nov 2025</p>
                                 <p className="text-gray-500 mt-4 text-sm">

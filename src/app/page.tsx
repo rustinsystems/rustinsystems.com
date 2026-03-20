@@ -9,19 +9,24 @@ export default async function Home() {
 
   const caseStudies = [
     {
+      id: "Cape Peninsula University of Technology: Enterprise VDI Deployment",
+      icon: Server,
+      role: "Linux Infrastructure Engineer",
+    },
+    {
       id: "Muhammadeyah Pre-Primary: Case Study in IT Modernisation",
       icon: Users,
-      role: "Network Administrator (Freelance)",
+      role: "Network Administrator",
     },
     {
       id: "Hadjie Abdullah Solomon Trust: Enterpise Network Infrastructure Overhaul",
       icon: Building,
-      role: "Infrastructure Engineer and Systems Architect (Contract)",
+      role: "Infrastructure Engineer and Systems Architect",
     },
     {
       id: "Admin Professional: From Digital Identity to Physical Resilience",
       icon: Code,
-      role: "Full Stack Engineer & Infrastructure Consultant (Contract)",
+      role: "Full Stack Engineer & Infrastructure Consultant",
     }
   ];
 
@@ -61,12 +66,11 @@ export default async function Home() {
     },
   ];
 
-  // Map services to blog posts or general blog page
   const serviceLinks: Record<string, string> = {
-    "Server Administration": "/blog/Muhammadeyah%20Pre-Primary:%20Case%20Study%20in%20IT%20Modernisation", // Example mapping based on content
+    "Server Administration": "/blog/Cape%20Peninsula%20University%20of%20Technology:%20Enterprise%20VDI%20Deployment", // Example mapping based on content
     "Network Infrastructure": "/blog/Hadjie%20Abdullah%20Solomon%20Trust:%20Enterpise%20Network%20Infrastructure%20Overhaul",
-    "Secure Remote Access": "/blog/Secure%20Remote%20Access%20for%20Education%20IN%20PROGRESS",
-    "End-Point Security & Lifecycle": "/blog", // General fallback or specific post if available
+    "Secure Remote Access": "/blog/Cape%20Peninsula%20University%20of%20Technology:%20Enterprise%20VDI%20Deployment",
+    "End-Point Security & Lifecycle": "/blog/Muhammadeyah%20Pre-Primary:%20Case%20Study%20in%20IT%20Modernisation", // General fallback or specific post if available
   };
 
   return (
